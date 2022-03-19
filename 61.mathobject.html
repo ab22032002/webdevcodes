@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH OBJECT in <i>js </i></title>
+</head>
+<body>
+    <div class="container">
+        <h3>Math object</h3>
+    </div>
+    <script>
+        let m = Math;
+        console.log(m); // this will print a lot of the things which in case for using many aspects of mathematics 
+        // Printing the constants from Math Object
+    console.log("The value of Math.E is ", Math.E)
+    console.log("The value of Math.PI is ", Math.PI)
+    console.log("The value of Math.LN2 is ", Math.LN2)
+    console.log("The value of Math.SQRT1_2 is ", Math.SQRT1_2)
+    console.log("The value of Math.LOG2E is ", Math.LOG2E)
+    // e is here EUlers functions 
+    let a = 34.432;
+    let b= 432343;
+    console.log("the value of a and b " ,a,b);
+    console.log("The value of a and b rounded is ", Math.round(a), Math.round(b));
+    console.log("the value of 3 raised to the power of 2 is ", Math.pow(3,2));
+
+    // rouding up to the nearest integer 
+    console.log("5.8 rounded up to nearest integer is ", Math.ceil(5.8)) 
+    // this is rpunded down 
+    console.log("5.8 rounded down to nearest integer is ", Math.floor(5.8)) 
+    console.log("using the sqrt function to the value a which is 34 in the case given here  ",Math.sqrt(a))
+    // Trinonometric Functions
+    console.log("The value of sin(pi/2) is ", Math.sin(Math.PI/2))
+    console.log("The value of tan(pi/2) is ", Math.tan(Math.PI/2))
+    console.log("The value of cos(pi/2) is ", Math.cos(Math.PI/2))
+    // min and max value 
+    console.log("Minimum value of 4, 5, 6 is ", Math.min(4,5, 6));
+    console.log("Maximum value of 4, 5, 6 is ", Math.max(4,5, 6));
+
+    // generating the random numbers 
+    let r = Math.random();
+    console.log("The random number is ", r)
+    // generating a number between 2 no.s it will generate a random no everytime you reload this page 
+    let a1 = 50;
+let b1 = 60;
+let r50_60 = a1 + (b1-a1)*Math.random();
+console.log("The random number is ", r50_60);
+let n = (75)*Math.random();
+console.log("this is the number upto 75",n);
+console.log("jo nhi pata hoga usko net se dekhlena cheatsheet available hai math");
+    </script>
+</body>
+</html>

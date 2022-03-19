@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM </title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>this is the second container</p>
+    </div>
+    <script>
+        // this will help in manipulating the object model  
+        let main = document.getElementById('main');
+        console.log(main);
+        // we can easily target them 
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        // now we can manipulate the contents of the the DOCUMENT by using the NAV  as its stored here 
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+        // to just see the first one  from the class name 
+        let sel = document.querySelector('.container');
+        console.log("selector return ", sel);
+        // this is the css selector it will return the first value it got by searching in the html 
+        let sels = document.querySelectorAll('#nav>li')
+        console.log(sels);
+        // targetting the li which has nav as id 
+        // at first place its get targetted by direct only the value must be in direcct manner of the particular id / class selected  
+        let main1 = document.querySelector('#main>ul');
+        console.log(main1);
+        // we can perform the operations here when to show wher to show 
+    </script>
+</body>
+</html>

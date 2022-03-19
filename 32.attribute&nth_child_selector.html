@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth psedo selectors </title>
+    <style>
+        .container {
+            display: block;
+            width: 400px;
+            margin: auto;
+
+        }
+
+        input {
+            display: block;
+            /* to make it align in the column  */
+            padding: 10px;
+            margin: 10px 5px;
+            font-size: 1.3rem;
+        }
+
+        input[type='text'] {
+            padding: 10px;
+            border: 2px solid red;
+            /* font-size: 1.3rem; */
+
+        }
+
+        /* for the particular anchor tag which has the target set  */
+        a[target] {
+            font-size: 34px;
+            color: aqua;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        a[target]:hover {
+            font-size: 34px;
+            color: black;
+            background-color: cyan;
+            /* text-decoration: none; */
+        }
+
+        /* target self is generally targets the self paga  */
+        a[target='_self'] {
+            font-size: 34px;
+            color: black;
+            background-color: aqua;
+            text-decoration: none;
+        }
+
+        /* hovering the anchor which has the taget set to self  */
+        a[target='_self']:hover {
+            font-size: 34px;
+            color: red;
+            background-color: yellow;
+            text-decoration: none;
+        }
+
+        /* works in gathered format also  */
+        input[type="password"],
+        input[type="text"] {
+            background-color: black;
+            color: white;
+            margin: 5px;
+            border: 2px solid aqua;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            border: 2px solid black;
+            background-color: royalblue;
+            border-radius: 5px;
+            padding: 5px 105px;
+        }
+
+        input[type="submit"]:hover {
+            border: 5px solid yellow;
+            background-color: black;
+            color: royalblue;
+            border-radius: 5px;
+            padding: 5px 105px;
+        }
+
+        li {
+            list-style: square;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        /* this will change only the nth child of the li  */
+        li:nth-child(17) {
+            color: blue;
+            background-color: aquamarine;
+        }
+
+        li:nth-child(5) {
+            color: red;
+            background-color: black;
+            font-weight: bold;
+        }
+
+        /* har dusre par agar krna hai  */
+        /* it can also used as odd for 2n+1 and even for 2n th element */
+        li:nth-child(2n+0) {
+            color: yellow;
+            background-color: black;
+            /* font-weight: bold; */
+        }
+
+        /* to select odd or even child  */
+        li:nth-child(odd)
+
+        /*even can also be there*/
+            {
+            background-color: rgb(223, 206, 180);
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2> <a href="http://google.com" target="_blank"> Go to google</a> </h2>
+        <h2> <a href="http://facebook.com" target="_self"> come to me</a></h2>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+            <li class="item" id="item11">item11</li>
+            <li class="item" id="item12">item12</li>
+            <li class="item" id="item13">item13</li>
+            <li class="item" id="item14">item14</li>
+            <li class="item" id="item15">item15</li>
+            <li class="item" id="item16">item16</li>
+            <li class="item" id="item17">item17</li>
+            <li class="item" id="item18">item18</li>
+            <li class="item" id="item19">item19</li>
+            <li class="item" id="item20">item20</li>
+        </ul>
+    </div>
+</body>
+
+</html>

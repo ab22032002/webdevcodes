@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object in JS</title>
+</head>
+<style>
+    p{
+        
+    }
+  .container{
+      font-size: 1.3re;
+      border:2px solid black;
+      background-color: aqua;
+      color:black;
+      padding:5px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      padding:20px;
+      justify-content: center;
+      /* tom make it align oin the center */
+  }
+  #time{
+      font-weight: bold;
+      font-style: italic;
+  }
+</style>
+<body>
+    <div class="container">
+       <!-- <p> this is container </p> -->
+        <p> current time is    :</p>
+        <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is date and time informer");
+        let x = new Date();
+        // this will generate the date 
+        console.log(x); 
+        // now approximately like having the def values or from which this reference is taken 
+        let y = new Date(0); // this is also a constructor which works on default here
+        console.log("this is the default time :"+y);
+        // making the time in appending mode 
+        // this will print the time adding the number given in the in braces
+        let z = new Date(100000); //. added 100000 miliseconds just 
+        console.log(z);
+        let newdate = new Date("2022-03-07");  // this day gets generated here 
+        console.log(newdate);
+        // let a = new Date(year,month,date,hours,minutes,seconds,miliseconds);
+        // this is the constructor 
+        let dated = new Date(3020,4,6,7,6,56,32);
+        console.log(dated);
+        let yr = dated.getFullYear();
+        console.log("this is year:",yr);
+        let mnth = dated.getMonth();
+        console.log("this is month:",mnth);
+        let day = dated.getDay();
+        console.log("this is day:",day);
+        let hours = dated.getHours();
+        console.log("this is hour :",hours);
+        let seconds = dated.getSeconds();
+        console.log("this is swconds :",seconds);
+        let date = dated.getTime();
+        console.log(date);
+        dated.setDate(90); // ADDING 90 DAYS TO THE CURRENT DATE 
+        // this is the function of the js to autocorrect 
+        console.log("this is the added date with argument in the setdate():",dated);
+        // setSeconds() also exists
+        dated.setDate();
+        dated.setMonth();
+        setInterval(updateTime,1000);
+        // adding the change per second
+        function updateTime()
+        {
+            time.innerHTML= new Date();
+        }
+    </script>
+</body>
+</html>

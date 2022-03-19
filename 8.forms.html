@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms </title>
+</head>
+<body>
+    <h2>this is for understanding the form </h2>
+    <form action="noaction">
+        <div>
+            <label for="name">name</label>
+         <input type="text" name="myname" id="name">
+        </div>
+        <br>
+    <!-- somewhat note recommended  -->
+        <div>
+            <p>lable helps in raching the position at which the cursor is currently pointing</p>
+            <label for="role">role</label>
+         <input type="text" name="myrole" id="role">
+            <!-- name is for the backened  -->
+        </div>
+        <br>
+        <div>
+            <label for="email">email</label>
+            <input type="text" name="myemail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+          <input type="date" name="mydate" id="date">
+          <!-- identified by id  only  -->
+            <!-- input:date   the shorthand notation for calling it  -->
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="my bonus" id="">
+            <!-- input:number shorthand notation  -->
+        </div>
+        
+        <br>
+        <div>
+            are you elligible  : <input type="checkbox" name="mycheckbox" id=""checked >
+            <!-- checked used for checked only already checked  -->
+        </div>
+        <br>
+        <div>
+          gender : male <input type="radio" name="mygender" id="">
+          female <input type="radio" name="mygender" id="">
+          others <input type="radio" name="mygender" id="">
+        <!-- the name must be same for having the same or radion option  -->
+        <!-- be carefull even the spaces are gettting counted  -->
+        </div>
+        
+        <br>
+        <div>
+            write about yourself :<br>
+           <textarea name="mytext" id="" cols="30" rows="10"> </textarea> 
+        </div>
+        <br>
+        <div>
+            <label for="car"></label>
+            <select name="mycar" id="car">
+            <option value="ind" >indica</option>
+            <option value="swf">swift</option>
+            <option value="verna" selected>verna❤️</option>
+            <option value="lamor5">r5</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset">
+            <!-- input:submit shorthand notation for it  -->
+        </div>
+    </form>
+</body>
+</html>
+<!-- name kya krta hai kiidentity providekrta hai kisi bhi input tag ko jissee use backend pehachan sake  -->

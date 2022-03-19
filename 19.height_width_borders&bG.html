@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height_width_&BG</title>
+    <style>
+        #firstpara{
+            background-color: orange;
+            height: 100px;
+            width:455px;
+            /* border-width:4px;
+            border-style: solid;
+            border-color:green; */
+            border : 4px solid green ;/* together this all  */
+            border-radius: 10px;
+        }
+        #secondpara{
+            background-color: rgb(175, 238, 27);
+            height: 100px;
+            width:455px;
+            /* border : 4px solid rgb(65, 236, 60) ;together this all  */
+            border-radius: 10px;
+            border-top: 4px solid orangered; /* only for the top*/
+            border-bottom:  4px solid orchid;
+            border-left: 4px solid rgb(20, 248, 229);
+            border-right:4px solid paleturquoise;
+            
+
+        }
+        #thirdpara{
+            background-color: rgb(175, 238, 27);
+            height: 100px;
+            width:455px;
+            border : 4px solid black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 50px;
+            /* giving different border radius to diff sides  */
+        }
+        #fourthpara{
+            height:700px;
+            width:1400;
+            background-image: url('https://codewithharry.nyc3.cdn.digitaloceanspaces.com/assets/090fefe24d23d47584f6ddc7eb5a241e.png');
+            border : 20px solid red;
+            /* to avoid repeating  */
+           /* background-repeat: repeat-x; /* to repeat in x*/
+           /* background-repeat: repeat y; to repeat in y*/
+            background-repeat:no-repeat; 
+            background-position: center center;
+            background-position: center top;
+            background-position: center right ;
+            background-position: center left ;
+            background-position: top left;
+            background-position: top right ;   
+        }
+    </style>
+</head>
+<body>
+    <h3>this is heading</h3>
+    <p id="firstpara">this is para </p>
+    <h3>this is second  heading</h3>
+    <p id="secondpara">this is para </p>
+    <h3>this is third   heading</h3>
+    <p id="thirdpara">this is para </p>
+    <h3>this is fourth heading</h3>
+    <p id="fourthpara">this is para </p>
+</body>
+</html>

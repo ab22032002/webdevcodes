@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations&Keyframes</title>
+    <style>
+        *{
+            --min-height:25px;
+        }
+.container{
+    /* display: flex; */
+    background-color: yellow;
+}
+.box{
+    background-color: aqua;
+    width:250px;
+    height:250px;
+    position:relative;
+    animation-name:anything;
+    /* variable name could be anything */
+    animation-name: anything2;
+    animation-duration: 4s;
+    /* kitte samay tak chalega */
+    /* animation-iteration-count:infinite; */
+    animation-iteration-count: 1;
+     /*it can be finite number too */
+    /* how many times it run will be counted here 
+    mtlb kitte bar chalega wahi hai  */
+    /* overall mtlb yhi hai ki ye 30 sec tk chalega aur hai 3 baar 10 -10 sec k liye chalega */
+    animation-fill-mode: forwards;
+    /* to stop it at the last stage of animation  */
+    animation-fill-mode:backwards;
+    /* to make it back as a default setting we can say  */
+    animation-fill-mode: both;
+    /* it stucked at last  */
+    animation-timing-function: ease-in;
+    /* slow then get fast  */
+    animation-timing-function: ease-out;
+    /* fast at beg then it slows down to reach the destiny  */
+    animation-timing-function: ease-in-out;
+    /* slow fast slow  */
+    animation-delay: 2s;
+    /* animation  2 sec late se chalu hoga  */
+    animation-direction: alternate;
+    /* general as it goes on  this iss for animation we can say for default */
+    animation-direction: reverse;
+    /* to animate in the reverse direction  */
+    /* shorthand for the attribute of animations  */
+    /* animation: animation-name animaton-duration animation-timing-function animation-delay animation-iteration animation-fill-mode  */
+    animation: anything2 5s ease-in-out 1s 12 backwards;
+}
+@keyframes anything {
+    from {
+        width:200px;
+        height:var(--min-height);
+    }
+    to{
+        width:500px;
+        /* width:100vw; */
+        /* to strech the whole width  */
+        height:150px;
+    }
+    
+}
+@keyframes anything2 {
+    
+    0%{
+        top:0px;
+        left:0px;
+    }
+    25%{
+        top:250px;
+        left:0px;
+    }
+    50%{
+        top:250px;
+        left:250px;
+    }
+    100%{
+        top:0px;
+        left:250px;
+    }
+    /* we can see the  squre moment in the animation with a delay of 2sec specified already  */
+    
+}
+p{
+    padding:0px 10px;
+    font-size: var(--min-height);
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <p>this is a box</p> 
+        </div>
+    </div>
+    <p>somehow only  one animation is running let us see the following  chapters for the further queries </p>
+    <p>@codewithharry.com</p>
+</body>
+</html>

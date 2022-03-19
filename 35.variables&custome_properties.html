@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custome Properties</title>
+    <style>
+      
+      /* we will be creating here variables to use it at many places  */
+      *{
+          --box-color:rgb(57, 216, 221);
+          --box-color2:rgba(66, 8, 226, 0.747);
+        /* this is for all the parts of the  styles  */
+        /* changing just at one part can be reflected using the variables */
+        /* similiar to c++ like we have to define it globally or under the scope 
+        for the particular variable */
+        --maxwidth:645px;
+        --max-height:233px;
+      }
+.box{
+    /* --box-color:blue; */
+    height:200px;
+    width:200px;
+    background-color: var(--box-color);
+    border:2px solid hotpink;
+    box-shadow: inset 3px 3px 5px 5px var(--box-color2);
+    margin: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.container{
+     --box-color:red;
+     /* here variables gets modified like we do in c++ programs */
+    display: flex;
+     border: 2px solid var(--box-color);
+     width:var(--maxwidth);
+     height:var(--max-height);
+     align-items: center;
+     margin: auto;
+     background-color: var(--box-color2);
+     /* its not generating the color  I want for the border to take  */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> 
+            <p>i am sugarcrush</p>
+        </div>
+        <div class="box">
+            <p>i am levitating</p>
+        </div>
+        <div class="box">
+            <p> we can </p>
+        </div>
+    </div>
+</body>
+</html>

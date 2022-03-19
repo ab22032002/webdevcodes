@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iteration-of-java</title>
+</head>
+<body>
+    <h4>for,while</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aspernatur tempore consequatur eum illo tenetur quis modi explicabo expedita, ab distinctio quas a placeat ipsam eos dolores quaerat repudiandae rerum! Maxime suscipit nisi porro consequatur fuga repellat architecto earum, cumque natus eligendi aspernatur unde a ex. Magnam sint ullam laudantium, blanditiis eos id exercitationem consequatur obcaecati placeat necessitatibus ipsum quis, rem sapiente hic iure quod nulla amet asperiores eum beatae! Debitis velit, rerum reprehenderit cumque perspiciatis maxime, tempora vel voluptate molestiae recusandae architecto libero ducimus aliquid provident assumenda neque unde.
+    </p>
+    <script>
+        let i= 89;
+        for(i=0; i<3; i++)
+        {
+            console.log(i);
+        }
+        let animals = ['dog','cat','cow','rabbit'];
+        for (let i = 0; i < animals.length; i++) {
+            console.log("this is my prefered "+ i + " pet " + animals[i]);
+            
+        }
+        // doing the same job  using the different method 
+        animals.forEach(function f(element){console.log("this is my fav "+ element + " to modern js");}
+        );
+        for (element  of animals) {
+            console.log("this is my fav "+ element + " to modern js once again ");    
+        }
+        let dev = 
+        {
+              name:"abj",
+              salary:5,
+              occup : "web-dev"
+        };
+        // for (const key in object) {
+        //     if (Object.hasOwnProperty.call(object, key)) {
+        //         const element = object[key];
+                
+        //     }
+        // }
+        // this is very imp 
+        for(key in dev)
+        {
+            console.log(`the ${key} of dev is ${dev[key]}`);
+        }
+        let j=0;
+        while(j<4)
+        {
+            console.log(`${j}  is less than 4`);
+            j++;
+        }
+        let k =0;
+        do 
+        {
+            console.log(`${k} is less than 8`);
+            k++;
+        }while(k<0);
+    </script>
+</body>
+</html>

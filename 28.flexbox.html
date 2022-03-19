@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox properties</title>
+    <style>
+        .container{
+            height:500px;
+            width:100%;
+            border: 2px solid black;
+            /* initializing the container as flexbox */
+            display:flex;
+            /* flex properties for flex cntr */
+            flex-direction: row;
+            /*by default*/
+            /* flex-direction: column; */
+            /* they will fall in columns then  */
+            /* flex-direction: row-reverse; */
+            /* reverse filling of the flex cntr */
+            /* flex-direction: column-reverse; */
+             /* flex-wrap:nowrap */
+             /* by default */
+            /* flex-wrap:wrap;  */
+          /* to make it fit during the wrapping up of the container */
+          /* flex-wrap: wrap-reverse; */
+          /* this will set opposite to the order */
+
+          /* shorthand  flex-flow*/
+          /* flex-flow: row-reverse wrap; */
+          /* flex direction and flex wrap */
+          justify-content: center;
+          /* alligning the things centerly  */
+        /* justify-content:space-around; */
+        /* to make them   with borders x of the container and with the contents 2x  */
+        justify-content: space-between;
+        /* to provide the space between the items evenly and not with the borders */
+        justify-content: space-evenly;
+        /* spacing equally between the boxes and the borders */
+        align-items: center;
+        /* to make it vertically center */
+        align-items: flex-start;
+        /* which is by default setting  */
+        /* align-items: flex-end; */
+        /* to make it stick to the end */
+        /* flex-wrap:wrap; ++ align-items: strech; */
+        /* this will create the evenly spaced during the streching of the window */
+        }
+        .item{
+            background-color: aqua;
+            border:2px solid red;
+            margin:2px;
+            padding:2px; 
+            /* padding acts where the distance between the content and the border  */
+           width:200px;
+           height:200px;
+        }
+        #item1{
+            /* orders are for orders in arrangement  */
+            /* maximum the order later it gets placed  */
+            order:4;
+            flex-grow:2;
+        }
+        #item2{
+            order:3;
+            flex-grow: 3;
+            /* the grow is the multiplication of the number while increasing or streching the window */
+            /* negetive numbers  are invalid to give  */
+            flex-shrink: 2;
+            /* while shrinking than its normal size it will shrink twicw than the normal one  */
+        }
+        #item3{
+            order:2;
+            /* to increase the width wee use flex-basis:123px */
+            flex-basis:320px;
+            /* when flex  direction is set to row then it will be width  */
+            /* when flex  direction is set to column then it will be height  */
+
+            /* shorthand for grow shrink and basis */
+                        flex: 2 2 300px;
+                        align-self:flex-end;
+                        /* to align it only this specific   */
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>this is flexbox information</h1>
+    <div class="container">
+        <div class="item" id="item1">firstbox</div>
+        <div class="item" id="item2">secondbox</div>
+        <div class="item" id="item3">thirdbox</div>
+        <!-- <div class="item" id="item4">fourthbox</div>
+        <div class="item" id="item5">fifthbox</div>
+        <div class="item" id="item6">sixthbox</div> -->
+    </div>
+</body>
+</html>

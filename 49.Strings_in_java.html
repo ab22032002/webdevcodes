@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings In java</title>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam id veritatis animi, iste deleniti cupiditate quod deserunt similique autem magnam quo quisquam a sed eligendi nihil perspiciatis unde, inventore soluta?
+        Nihil quae maxime itaque modi laboriosam laudantium similique repudiandae qui ducimus vitae tempora neque, tempore ea expedita provident veniam voluptate explicabo placeat ex, architecto enim. Iusto, eaque! Pariatur, eos ullam.
+        Reprehenderit iste commodi similique optio nostrum, nihil itaque repellat repellendus harum velit quis praesentium quibusdam minus cupiditate esse? Sunt hic excepturi facilis aspernatur voluptatem libero omnis suscipit, voluptatibus officia? Neque?
+        Voluptas sint aperiam at dicta, velit, iusto beatae rerum consequuntur itaque eos dolorum explicabo corrupti nihil, debitis nam? Blanditiis aperiam officiis laborum voluptatum ducimus suscipit, nostrum laboriosam sed libero architecto.</p>
+        <p>when we want to add the double quotes in between thwn use the single quotes for declaring the string and vice-versa</p>
+        <div id="cdn">
+            <!--  no content wriiten here  -->
+        </div>
+        <script>
+            var string ="this"
+            console.log(string);
+            var string2 ='this is also an string';
+            console.log(string2);
+            var name = "this is 'also used in between'"
+            console.log(name);
+            console.log("concattenation opetion in the string ")
+            var u = "i am affectionate with"
+            var me = "u" 
+            var len1 = me.length;
+            console.log(`concattenated string where we can use many sentences togrther \n the length of the ${me} is ${len1} ::`)
+            // it worked with any of the string like the object based model
+            console.log("we're performing the concatination of the string :"+ u +" "+ me)
+            // kindly look at  the syntaxes given to very js variables that will help 
+            // assining the variable value to new variable is like the linux // 
+            // template litral in js 
+            var f1= "iam fine"
+            var f2 ="thankyou"
+            var xyz=` how are you : ${f1}  and how about you : ${f1} too ${f2} `
+            // -->    how are you : iam fine and how about you : iam fine too thankyou 
+            console.log(xyz);
+            // length of the string 
+            var len = string.length;
+            console.log(`length of the string is :${len} and the string is :${string}`)
+            // escape sequence character 
+            console.log("hello this is \\n which in genral used to jump to the \n new line ")
+            // string constructor 
+            var y = new String("this is new string ")
+            console.log("this is the value of y  :\t  "+y);
+            // normal form is the better on 
+            // dynamic addition in the html 
+            document.getElementById('cdn').innerHTML = '<h3>this is my heading done dynamically using the js </h3>'
+            // dynamic adddition i saw to be wriiten in the last part of the scope 
+            // its like having no element in it
+        </script>
+    </div>
+</body>
+</html>

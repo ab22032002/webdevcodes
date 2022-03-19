@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        *{ 
+            /* universal selector */
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            height:80vh;
+            background-color:gold;
+            display:flex;
+            margin:auto;
+            align-items: center;
+        }
+      .box{
+          display:flex;
+          background-color:cyan;
+          border:2px solid black;
+          height:200px;
+          width: 200px;
+          margin:auto;
+          border-radius: 10px;
+          padding:5px;  
+          align-items: center;
+          justify-content: center;
+          transition: all 2s ease-in-out 0.1s;
+      }
+      .box:hover{
+          font-size: 30px;
+          /* to make it visible like the 3d transition  */
+      }
+      #box1:hover{
+        transform:rotate(30deg);
+        /* to rotate it  by 30 deg */
+        /* -ve to make the direction opposite  */
+      }
+      #box2:hover{
+          transform:skew(30deg);
+          /* to make it visible like the 3d transition  */
+      }
+      #box3:hover{
+          transform: scale(1.5);
+          /* for multiplying its size */
+      }
+      #box4:hover{
+          transform:translateX(123px);
+          /* to translate in x  */
+          transform:translateY(123px);
+          /* to translate  in y  */
+          transform: translate(123px,123px);
+          /* to move it diagonally towards right  */
+      }
+      #box5:hover{
+          background-color: black;
+          color:red;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            this is an aligned box
+        </div>
+        <div class="box" id ="box2">
+            this is another aligned box 
+        </div>
+        <div class="box" id ="box3">
+            this is another aligned box 2 
+        </div>
+        <div class="box" id ="box4">
+            this is another aligned box3
+        </div>
+        <div class="box" id ="box5">
+            this is another aligned box4
+        </div>
+    </div>
+</body>
+</html>

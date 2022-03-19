@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating transitions in CSS</title>
+        <style>
+            .container{
+                display: flex;
+                /* align-items: center; */
+                justify-content: center;
+                /* to make it vertically center too  */
+            }
+          #box {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height:200px;
+              width:200px;
+              background-color: aqua;
+              border:2px solid red;
+              transition-property: background-color;
+              transition-duration: 1s;
+              transition-timing-function: ease-in-out;
+              /* ease in for slow-fast  */
+              /* ease-out for fast-slow  */
+              /* ease-in-out for slow fast slow  */
+              transition-delay: 1s;
+              /* transition will start litte late with delay  */
+              /* shorthand */
+              transition:background-color 1s ease-in-out 0s;
+              transition: all 1s ease-in-out 0.2s;
+                      }
+          #box:hover{
+              background-color: black;
+              color:red;
+              font-size: 40px;
+              border-radius: 10px;
+              height:250px;
+              width:250px;
+          }
+          /* only those properties can get transition effect which  are having the continuous values  */
+          /* in binary we cant make it transiton as it have destiny and current loc only  */
+          p{
+              font-size: 25px;
+              font-family: cursive;
+              text-align: center;
+          }
+          
+        </style>
+   
+</head>
+<body>
+    <h3>this is transition info </h3>
+    <p>try hovering this box will be happy to see the transition effect</p>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+    </div>
+</body>
+</html>

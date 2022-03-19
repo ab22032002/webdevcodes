@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json_tut</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        let jsonobj={
+            name:"harry",
+            channel:"CWH",
+            friend:"anonymous",
+            food:"chicken"
+        }
+        console.log("this is an object",jsonobj);
+        // converting the object into the string 
+        let myjsonstr= JSON.stringify(jsonobj);
+        console.log("this is converted string:",myjsonstr);
+        // many of the operations can be performed to it 
+      //  myjsonstr.replace("harry","larry");
+       // console.log("this is converted string:",myjsonstr);
+       myjsonstr= myjsonstr.replace('harry','larry');
+       console.log("this is the string",myjsonstr);
+       // to make it a valid object it must be a valid JSON string
+       newJsonobj= JSON.parse(myjsonstr);
+       console.log("this is converted from the string:",newJsonobj);
+       
+    </script>
+</body>
+</html>

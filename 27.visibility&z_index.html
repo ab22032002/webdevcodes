@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        /* z-index will only work for the position :relative , absolute ,fixed or static */
+        /* by default the latest change can be seen as the uppermost layer of the boxes  */
+        /* make the z index the maximum for seeing it the uppermost  */
+        .box{
+            width:170px;
+            height:170px;
+            border:2px solid black;
+        }
+        #box1{
+            background-color: tomato;
+            /* visibility: visible; */
+            /* by default its visible  */
+            /* visibility :hidden; */
+            /* to make something hidden but space grabbing  */
+            position:relative;
+            top:150px;
+            /* tab humlogo ko ye ghuste huye dikhega  */
+            z-index: 1;
+
+        }
+        #box2{
+            background-color:cyan;
+            /* display:none; */
+            /* to competely remove the element*/
+            position: relative;
+            top:100px;
+            z-index: 3;
+            /* this will be shown upper to the 1st box as it have the higher z-index */
+        }
+        #box3{
+            background-color:blue;
+            /* position: relative;
+            top:49px; */
+        }
+        #box4{
+            background-color:skyblue;
+            /* position: relative;
+            top:200px; */
+        }
+        /* jab ek box ek ke uppar aaye tab kya krein? */
+        /* position must be relative for the accomplishment of z-index */
+        p{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div>
+        <p>z index work only on the positioned element</p>
+    </div>
+</body>
+</html>

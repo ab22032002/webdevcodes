@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning in css</title>
+    <style>
+        /* css positions 1.static(default) 2.absolute 3. relative  and another type is fixed and sticky  */
+         .box{
+             display:inline-block;
+             border:2px solid red;
+             width:150px;
+             height:150px;
+             margin:2px;
+         }
+         #box1{
+             position:static; 
+             /* position static is by default */
+             
+             
+         }
+         /*
+          #box3{
+             position:absolute;
+             /* 3 yaha pe gayab ho jata hai  
+         } 
+         */
+         #box3{
+             /* relative to its old position  */
+             position:relative;
+             top:23px;
+             left:23px;
+         }
+         #box2{
+            position:relative;
+             top:46px;
+             left:46px;
+
+         }
+         #box1{
+            position:relative;
+             top:69px;
+             left:69px;
+
+         }
+        h2{
+            font-family: cursive;
+            margin:30px;
+            padding:30px;
+        }
+        .container{
+            border: 2px solid blue;
+            width:5000px;
+            height:5000px;
+        }
+        .boxer{
+            display:inline-block;
+             border:2px solid rgb(47, 255, 193);
+             width:150px;
+             height:150px;
+             margin:13px;
+             padding:2px;
+        }
+        #boxer3{
+            position:absolute;
+            /* postion absolute make it totally related to the parent  */
+            top:23px;
+            right:23px;
+        }
+        /*  jab mai scroll kru tab move mt kre  positon fixed krdo  */
+        #boxer3{
+            position:fixed;
+        }
+        #boxer2{
+            position:fixed;
+            /* position relative to its browser window */
+            right:0px;
+            bottom:0px;
+        }
+        #boxer1{
+            position:sticky;
+            /* parent se chipka dena  */
+            top:20px;
+        }
+        
+         
+    </style>
+</head>
+<body>
+    <h2>simple style i made using the position relative property </h2>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <h2>this is for understanding several other properties</h2>
+    <div class="container">
+    <div class="boxer" id="boxer1">1 </div>
+    <div class="boxer" id="boxer2">2</div>
+    <div class="boxer" id="boxer3">3 boxer</div>
+    <div class="boxer" id="boxer4">4</div>
+    </div>
+    <p>position absolute meaning is relative to its parent</p>
+</body>
+</html>

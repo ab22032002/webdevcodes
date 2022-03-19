@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* making the dispaly grid all the items in the container becomes grid item */
+            grid-template-columns: 200px 100px 100px;
+            /* this is item have the width 200 then 100 then 100 */
+            /* seems little increased due to the padding */
+            grid-template-columns: auto;
+            grid-template-columns: 100px auto 100px;
+            /* auto will take the wholy space given to it (sometimes its between the columns of the row)  */
+            grid-template-columns: auto auto auto;
+            /*  all auto for equal division of the screen */
+            grid-template-columns: 1fr 4fr 2fr;
+            /* the above is screen ratio (full ratio so the screen get divided into the summession of the no given in terms of fr then allot a/c to that) */
+            grid-template-columns: repeat(10,auto);
+            /* to arrange the n items in the row with equal spacing */
+            grid-template-columns: repeat(6,auto);
+            grid-gap:2rem; 
+            /* to provide the gaps  */
+            /* can also style the .item for the further stylling */
+            grid-gap:2px;
+            grid-template-columns: repeat(12,auto);
+            /* grid-template-columns: auto; */
+
+        }
+        .item{
+            /* width:100px;
+            height: 100px; */
+            background-color: aqua;
+            color: black;
+            margin:2px ;
+            /* margin to differentiate the scope of each of the box */
+            padding:5px ;
+            /*  u will see the padding inside the box  */
+            border:2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- css grid is display property  -->
+    <!-- css grid allows us to make grid  -->
+    <!-- 2d layout -->
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+    </div>
+</body>
+</html>

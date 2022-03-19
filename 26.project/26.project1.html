@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      body{
+         font-family: 'Playball', cursive;
+          margin:0px;
+          padding:0px;
+          height:800px;
+          /* this is added to cover the whole scenario */
+          /* bg settings can be done using this only  */
+          background: url('travel.webp');
+          /* url is a function  */
+          background-repeat: no-repeat;
+          background-size:cover;
+          /* background-position: */
+          color:white
+          
+      }
+      .left
+      {
+        /* border:2px solid red; */
+        display:inline-block;
+        position:absolute;
+        left:10px;
+        top:20px;
+        background-color: tomato;
+      }
+      .left img{
+        width:90px;
+        height:53px;
+        /* filter:invert(100%) to make the color contrast opposite */
+      }
+      .left div{
+        color:white;
+        background-color: tomato;
+        margin:0px;
+        padding:0px;
+      }
+      .mid{
+        /* border:2px solid white; */
+        display:block;
+        margin: 20px auto;
+        width:50%;
+      }
+      .right{
+        /* border:2px solid cyan; */
+        display:inline-block; 
+        /* to make all of them reside side by side  */
+        position:absolute;
+        right:10px;
+        top:20px;
+        /* top:22px; */
+      }
+      .navbar
+      { display:inline-block;
+
+      }
+      .navbar li{
+        display:inline-block;
+        font-size: 20px;
+       
+      }
+      .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:10px;
+
+      }
+      .navbar li a:hover , .navbar li a.active{
+        
+        text-decoration: underline;
+        color:tomato;
+      
+
+      }
+      .btn{
+        margin:2px;
+        padding:2px;
+        background-color: black;
+        color:white;
+        cursor:pointer;
+        border:1px solid white;
+        border-radius: 5px;
+        font-family: cursive;
+      }
+      .btn:hover{
+        background-color:cyan;
+        color:black;
+
+      }
+      .container{
+        border: 2px solid white;
+        margin:350px 50px;
+        padding: 23px;
+        width:25%;
+        border-radius: 5px;
+      }
+      .formgroup input 
+      {
+        text-align:center;
+        display:block;
+        border:2px solid black;
+        margin: 3px auto;
+        border-radius: 5px;
+        font-family: cursive;
+      }
+     .container h3
+     { text-align:center ;
+
+      }
+      .container button{
+           display:block;
+           width:50%;
+           margin:auto;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- if it was in another folder css is a folder in the folder where the 26project1.html is saved -->
+</head>
+<body >
+    <header class="header">
+      <!-- left for logo -->
+      <div class="left">
+       <img src="travel2.jpg" alt="">
+       <div> travel world</div>
+      </div>
+      <!-- mid for navigation -->
+      <div class="mid">
+    <ul class="navbar">
+      <li ><a href="#" class ="active"> Home</a></li>
+      <li ><a href="#"> About us</a></li>
+      <li ><a href="#">Booking counters</a> </li>
+      <li ><a href="#">contact us</a> </li>
+    </ul>
+      </div>
+      <!-- right is buttons -->
+      <div class="right">
+        <button class="btn">call us now</button> <button class="btn">email us now</button>
+      </div>
+      <div class="container">
+        <h3>book your next trip</h3>
+        <form action="">
+      <div class="formgroup">
+        <input type=" text" name="" placeholder="enter your name">
+      </div>
+      <div class="formgroup">
+        <input type=" text" name="" placeholder="enter your age">
+      </div>
+      <div class="formgroup">
+        <input type=" text" name="" placeholder="enter your destination">
+      </div>
+      <div class="formgroup">
+        <input type=" text" name="" placeholder="enter nearest city">
+      </div>
+      <div class="formgroup">
+        <input type=" text" name="" placeholder="enter your phone number">
+      </div>
+      <!-- <div class="formgroup">
+        <input type="reset" value="reset">
+      </div> -->
+      <button class="btn">submit</button>
+    </form>
+      </div>
+    </header>
+</body>
+</html>

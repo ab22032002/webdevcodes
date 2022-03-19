@@ -1,0 +1,106 @@
+/* css reset  */
+*{
+    margin:0px;
+    padding:0px;
+}
+ /* css variables  */
+ :root{
+     --navbar-height:100px;
+ }
+ #navbar{
+     /* position: absolute; */
+     display:flex;
+     align-items: center;
+     position: relative;
+ }
+ /* logo and logo image  */
+ .logo{
+       margin:5px;
+       padding:15px;
+ }
+ .logo img{
+     height:60px;
+     width:60px;
+ }
+ /* navbar and  */
+ 
+  #navbar ul{
+     display:flex;
+ }
+ #navbar:before{
+ content: "";
+ background-color:chocolate;
+ position: absolute;
+ height:100%;
+ width:100%;
+ z-index:-1;
+ opacity:0.5;
+}
+  #navbar ul li{
+      list-style: none;
+      /* to remove the dootted indiactors of the li  */
+     color:red;
+     font-size: 1.2rem;
+ }
+ /* for using the hover effect we're declaring the thimgs for beyondness  */
+#navbar ul li a
+{   display: block;
+    padding:5px 15px;
+    /* color: */
+    text-decoration: none;
+    color:blue;
+    /* to remove the underline  */
+}
+#navbar ul li a:hover
+{   background-color:cyan;
+    color:white;
+    border:1px solid black;
+    border-radius: 5px;;
+}
+/*   HOME */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 100px;
+    justify-content: center;
+    align-items: center;
+}
+#home:before{
+ content: "";
+ background:url(../images/autumn-studio-zv3ckJKftC4-unsplash.jpg) no-repeat center center/cover;
+ /* center/cover to make it fit to the content */
+ /* for coming outside one folder i.e. why we took two dots .. */
+ position: absolute;
+ height:100%;
+ width:100%;
+ z-index:-1;
+ opacity:0.75;
+}
+/* utility classes */
+#home h1{
+    color:aqua;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h-primary{
+    font-size:2.8rem;
+    padding:10px;
+}
+.p-primary{
+    text-align: center;
+    padding:4px;
+
+}
+.btn{
+    padding:5px 10px;
+    border:2px solid yellow;
+    background-color: black;
+    color: white;
+    margin:5px 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.705);
+    border-radius: 5px;
+}

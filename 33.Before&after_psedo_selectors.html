@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After psedo selctors in CSS </title>
+    <style>
+        body{
+            margin: 0px;
+            padding:0px;
+
+            background-color: black;
+            color:aqua;
+            /* center/cover to completely cover the contents of the particular element choosen  */
+        }
+        header{
+         display: flex;
+         flex-direction: column;
+        }
+        header::before{
+            background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg') no-repeat center center/cover ;
+            content:""; /*none*/
+            z-index:-1; 
+            /* to make it the back of the website*/
+            position: absolute;
+            top:0;
+            left:0;
+            /*mandatory to have/*/
+             /* if somethings paddding and margin were creating the noices then use top :0; left:0; to clear the old stuffs */
+            width:100%;
+            height:100%;
+            /* to  make it visible**/
+            opacity:1; /* which makes it 50% darker than its original brightness*/
+           
+        }
+        .navigation{
+            display:flex;
+        }
+        li{
+            list-style:none;
+            padding: 10px 25px;
+        }
+        li:hover{
+            background-color: aqua;
+            color: black;
+            cursor:pointer;
+        }
+        section{
+            padding:5px;
+            display: flex;
+            flex-direction: column;
+            /* border:2px solid white; */
+            width:100vw;
+            align-items: center;
+            justify-content: center;
+            margin:20px;
+            height:500px;
+            /* to make it center of the body  */
+        }
+        h3{
+            font-size: 3rem;
+            font-style: italic;
+            margin:0px;
+            padding:0px;
+
+        }
+        p{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+   
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h3>beatiful  world</h3>
+        <p>the beautiful world has miracles at each and every place just create a vision to capture them </p>
+    </section>
+    
+</body>
+</html>

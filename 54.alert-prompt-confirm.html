@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert prompt and confirm </title>
+</head>
+<body>
+    <p>thid is the way i am , i may not be the best but i can try to better day by day </p>
+    <script>
+        // alert function 
+       //      alert("this is a alert message");
+        // alert doesn't return any value 
+        // isse pehle nipat lo phir website visit karna 
+        // when we're asking the questions to the user 
+        //let name = prompt("what is your name ", "this is the default value");
+        // default can be blank too it has no issue 
+//   let name = prompt("what is your name ", "Guest");
+//        console.log(name);
+// confirm is checking whether you want it or not 
+    let deletepost = confirm("do you really want to delete this post");
+    if(deletepost)
+    {
+        // code to delete the post 
+        console.log("your post is deleted successfiully");
+    }
+    else
+    {
+        // code to cancel the delete operation 
+        console.log("your request is now cancelled so the  delete operation have not been performed ");
+    }
+    </script>
+</body>
+</html>

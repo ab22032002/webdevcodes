@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <style>
+        h1{
+              background-color: aqua;
+              color:black;
+              text-align: center;
+              font-weight: bold;
+        }
+        li{
+            list-style: none;
+            padding:0px;
+            margin:0px;
+            background-color: palegreen;
+            font-weight: bold;
+            color: tomato;
+        }
+        div li  p {
+            /* kisi bhi div ke ander jo p hai uspar lagu mtlb har div k ander wala p  */
+            color: yellow;
+            font-weight: bold;
+            background-color: black;
+        }
+        div  p {
+            /*specific will be prefered*/
+            color:cyan;
+            font-weight: bold;
+            background-color: black;
+        } 
+        /* > for the direct child */
+        div > p{
+            color:blue;
+            background-color: white;
+        }
+        div + p{ 
+            /* pichhla sibling just before */
+            /* for those who had sibling as div just  */
+            /* sibling is for just same level as for div and p 
+            <div>
+                <p> 
+                    like  this  */
+          background-color: brown;
+        }
+        .outpara{
+            background-color: black;
+            color: aquamarine;
+            font-family: cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body> 
+    <h1>this is more on Selectors</h1>
+    <div class="container">
+        <p>iam the direct child</p>
+        <ul>
+            <li><p>this is para inside the li </p></li>
+            <li>this will not get affected</li>
+        </ul>
+        <div class="row">
+           <p>this is para</p>
+           <p>this is mid para</p>
+          
+        </div>
+    </div>
+    <p>this is the last para this is sibling para to div</p>
+    <p class ="outpara">i am sibling to the para and yet you can see  i am just styled as other para </p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional sttm </title>
+</head>
+<body>
+    <h3>this is for learning from the cdn sttm</h3>
+    <script>
+        // variable redeclaration issue 
+        var x = 500;
+        console.log(x);
+        var x =800;
+        console.log(x);
+        // to overcome this we generally use the 'let' kw 
+        // let  is the block level var declaration  
+        let a = 7800;
+        {   let a =-455;
+            console.log("local a : " + a);
+        }
+        // global a 
+        console.log("global a : " +a);
+        const j = 345;
+        // j = 456; this will throw error
+        const n = "this is a const value ";
+        // a = " i cannot tAKE place i'll throw error ";/// this will throw error 
+        let age =34;
+        if(age>18)
+        {
+            console.log("you can watch this movie");
+        }
+        else 
+        {
+            console.log("you cannot watch this movie");
+        }
+        // we can use the multiple argument checking in the same way we did in C++ and other languages 
+        let cups = 34;
+        switch (cups) {
+            case 15:
+                console.log("i am the 15 value");
+                break;
+            case 16:
+                console.log("i am the 16 value");
+                break;    
+            case 34:
+                console.log("i am the 34 value");
+                break;
+            default:
+            console.log("sorry this value did'nt exists ")
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <h3>this is my heading </h3>
+    <script>
+        let myvar = 34;
+        let employee = { 
+            name: "ssb",
+            salary: 20000,
+            occup: "doin' smthin'"
+        }
+        console.log(employee);
+        // special kind of the object is array 
+        let name =[1,2,4,5, "uandme", "just you", 12.45];
+        console.log(name[4]);// prints the 5 th value in your array 
+        console.log(name);
+        // now declaring usin' the object model 
+        let name2 = new Array(232,432,434,43,32);
+        console.log(name2);
+        // to print the length of the array 
+        console.log(name2.length);
+        name= name.sort();
+        console.log(name);
+        // adding elemrnt in the array 
+        name.push("this is pushed");
+        console.log(name);
+        console.log("what the emp is doin'   "+employee.occup);
+        console.log("printing the old one with different method   "+ employee['occup']);
+        // the last one is usefull while having the variable named as space separated
+        let names = new Array(23);
+        console.log( "names it will print the null value here :"+names);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set intervel & Settimeout</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log('hello');
+        // settimeout   ---> allows us to run the function once in the intervel of time 
+        // cleartimeout ---> allows us to run the function repeatedly after the intervel of time  
+        function greet (name ,jan)
+        {
+            console.log('hello good morning ' + name + jan);
+        }
+        // settimeout(fun_name, time ,args, args);
+       //  setTimeout(greet,5000 ,"argshere"," jan");
+         // it will print the output after the 5000 ns of time 
+        // we can pass the arguments too as the third thing here which in order getting printed here after one and another 
+
+        // there is always a unique id for the Timeout 
+        timeout= setTimeout(greet,5000 ,"argshere"," jan");
+        console.log(timeout);
+        // scenario that we dont have to show this to the user because he hv already logged in then 
+        clearTimeout(timeout);
+        // hide even after so long time of waiting 
+        let clear1 =setInterval(greet,1000 , "name" ,"gn");
+        // 1000 for every seconds speed 
+        clearInterval(clear1);
+        // first store its value then clear it by its id 
+
+        // this is the time to showcase the time on the website 
+        function displaytime()
+        {
+            time= new Date();
+            console.log("time");
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime,1000);
+        // to display the time ;
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoselectors&more designign</title>
+    <style>
+        .container{
+            border:2px solid red;
+            background-color:chartreuse;
+            border-radius: 8px;
+            width:666px;
+            margin:auto;
+            padding:33px;
+        }
+        a{
+            text-decoration:none;
+            /* to remove the underline symbol from the anchor */
+        }
+        a:hover
+        {
+            background-color: cornflowerblue;
+            color:white;
+        }
+        /* to make the button alike to the anchor one  */
+        button:hover
+        {
+            background-color: crimson;
+            color:white;
+        }
+        a:visited
+        {
+            color:white;
+        }
+        a:active
+        {
+            color:black;
+            /* when you just see while loading your page it turned this  */
+        }
+        .btn
+        {
+            background-color: coral;
+            padding:6px;
+            border:none;
+            cursor:pointer;
+            /* to make the button also like the link whenever someone points  */
+            font-size:15px;
+            border-radius:4px;
+
+        }
+        .btn:hover
+        {
+            border:2px solid cyan;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum ipsum tempora, ex fugiat quae magnam labore deleniti itaque soluta ea error distinctio nihil. Adipisci, animi? Commodi quae cum ipsum quasi repudiandae magni deserunt?
+        </p>
+        <a href="https://google.com" class="btn" target="_blank">Read more</a>
+        <button class="btn">contact us </button>
+        <a href="https://bootstrap.com" class="btn" target="_blank">bootstrap</a>
+    </div>
+</body>
+</html>

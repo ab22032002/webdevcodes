@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query</title>
+    <style>
+      .box{
+          font-size: 52px;
+          text-align: center;
+          background-color: red;
+          color:black;
+          display: none;
+
+      }
+      @media only screen and ( max-width:300px)
+      { /* 0 to 300px is a phone screen */
+         #box1
+         { 
+             display:block;
+             background-color: blue;
+         }
+      }
+      @media only screen and ( max-width:500px) and (min-width:300px)
+      { /* tablet from 300px to 500px*/
+         #box2
+         { 
+             display:block;
+             background-color: aqua;
+         }
+      }
+      @media only screen and ( max-width:800px) and (min-width:500px)
+      { /* tablet from 300px to 500px*/
+         #box3
+         { 
+             display:block;
+             background-color:yellow;
+         }
+      }
+      @media only screen and  ( min-width:800px)
+      { /* 0 to 300px is a phone screen */
+         #box4
+         { 
+             display:block;
+             background-color:tomato;
+             
+         }
+      }
+      p{
+          text-align: center;
+          font-size: 30px;
+          margin:300px;
+      }
+      p a:hover{
+          cursor: pointer;
+
+      }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"> iam a iphone</div>
+    <div class="box" id="box2"> iam a tablet</div>
+    <div class="box" id="box3">iam a computer</div>
+    <div class="box" id="box4"> iam a widescreen computer</div>
+    <p>learn <a href="https://www.w3schools.com/css/css3_mediaqueries.asp">more</a></p>
+</body>
+</html>

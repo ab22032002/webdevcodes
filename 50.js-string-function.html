@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Functions in JS</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h3>this is my body</h3>
+     <script>
+         var str = "This is My String";
+         console.log(str);
+         // this is the function to print the first occurance of the following string
+         // 1. index is atrted with the 0 by def 
+         // the whole string is counted as a single entity 
+         var position = str.indexOf('is');
+         console.log( "the index of 'is' is : " + position);
+         // this is fn to print the last occu of the particular string
+         var pos1 = str.lastIndexOf('is');
+         console.log("the last indexof 'is' is  " + pos1);
+         // substrin from the string
+         var substr = str.slice(1,7);
+         console.log("printing the substring which also includes the spacing : " + substr);
+         var substr1 = str.substring(1,7);
+         console.log("this is substr1 is having advantage over the over the slicing that it can take negative values from the user \n " + substr1);
+        //  var substr2 = str.substr(strat , lenght );
+        var substr2 = str.substr(5,7);
+        console.log("we are printing the sunstrin gusing the substr fn ---> "+ substr2);
+        var replace = str.replace('string','you')
+        console.log("this is the old string" + str);
+        console.log(`this is the replaced string using replace fn:  ${replace}`);
+        // conversion from lower to upper and vice-versa
+        console.log("printing it wholly in lowercase " + str.toLowerCase());
+        console.log("printing it in the uppercas :"+ str.toUpperCase());
+        // concatenation of the string 
+        var nstr = str.concat('New string');
+        console.log("concattenated str is\n  : "+nstr);
+        var xswspc = "    this          is            at         very             far          "
+        console.log(xswspc);
+        console.log("this is treamed one only delete from beg and the end " + xswspc.trim());
+        var char3 = str.charAt(2);
+        console.log("charat(2) WILL print the third element: \t " + char3);
+        var char4 = str.charCodeAt(3);
+        console.log("charcodeat(3) is used " + char4);
+        // will print the encrypted code provided to the particular element 
+     </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <h3>this is for the arrow functions</h3>
+    <script>
+        function greet()
+        {
+            console.log("good morning");
+        }
+        greet(); // simply callign the function 
+        // shorthand wriiting of the function called as arrow functions 
+        greet1 = ()=>{
+            console.log("this is greet1");
+        }
+        greet1();
+        setTimeout(() => {
+            console.log("we're inside settimeout")
+        }, 5000);   
+        // this is shown by 5000 miliseconds
+        // functions using the let 
+        let sum = (a,b)=> {
+            return a+b;
+        };
+        // another sortcut
+        let sub = (c,d)=> c-d;
+        // if the function didn't have any return type then it  no argument to get called;
+        greeet3 = ()=> console.log("this is greeet3");    // just as simple as that 
+        greeet3();
+        // steps to call the functions for all different times 
+        let obj1={
+        names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log("Kukdoo Koo " + student);
+            });
+        }
+        // studrnt is the parameter here 
+        // speak( i am a user defined function and yeah not a keyword )
+    }
+    // general function have the call of this as their own  function ka apna this normally 
+    // but in the case of arrow function this is not a member to it  
+    // this of the arrow function is dcalling its parent as here its the obj1 for the arrow fun directly jump to it  
+    obj1.speak();
+
+// calling the speak(); function by the parent here 
+
+    /// illustration of this 
+    let obj2={
+        greeting: "Good Morning",
+        names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        speak(){  // this is a arrow function so that its calling it's parent 
+            this.names.forEach((student)=>{
+                console.log(this.greeting + " Kukdoo Koo " + student);
+            });
+        }
+    }
+    obj2.speak();
+       // obj.speak();
+    </script>
+</body>
+</html>

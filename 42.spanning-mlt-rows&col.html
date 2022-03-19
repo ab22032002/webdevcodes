@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning multiple Rows and colums </title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(5, 2fr);
+            grid-template-rows: repeat(5,1fr);
+            /* grid-gap:2px; */
+            grid-column-gap: 5px;
+            grid-row-gap:10px;
+            /* to merge the rows we want  */
+            
+        }
+        .box{
+            background-color:black;
+            color: cyan;
+            border: 0.5px solid red;
+            padding:5px;
+        }
+        /* it is making it 4 times tha it seems to be  */
+        .box:first-child{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+            /* shortand not */
+            grid-column: 1/span 3; 
+            /* to make it thrice in the rowspan through col */
+            grid-row: 1/span 4;
+            /* to  amke it larger enough at the down side of the grid  */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is box1</div>
+        <div class="box">this is box2</div>
+        <div class="box">this is box3</div>
+        <div class="box">this is box4</div>
+        <div class="box">this is box5</div>
+        <div class="box">this is box6</div>
+        <div class="box">this is box7</div>
+        <div class="box">this is box8</div>
+        <div class="box">this is box9</div>
+        <div class="box">this is box10</div>
+        <div class="box">this is box11</div>
+        <div class="box">this is box12</div>
+        <div class="box">this is box13</div>
+        <div class="box">this is box14</div>
+        <div class="box">this is box15</div>
+    </div>
+</body>
+</html>

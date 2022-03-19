@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        body::before{
+            background: url('https://i.pinimg.com/originals/a7/3d/6e/a73d6e4ac85c6a822841e449b24c78e1.jpg') no-repeat center center/cover;
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:-1;
+            height:100%;
+            width:100%;
+            opacity:1;
+
+        }
+.container{
+    display: flex;
+}
+.card{
+    padding:23px 12px;
+    border:2px solid green;
+    margin:20px 10px;
+    background-color: aqua;
+    box-shadow: 10px 10px skyblue;
+    /* negative numbers used for creating the shadow opposite side  */
+              /* top left and color  */
+    /* to have the shadow and also can specify the color of the shadow */
+    
+}
+.card:hover{
+    cursor: pointer;
+    background-color: black;
+    color: aqua;
+}
+#card1{
+    /* box-shadow: oofset-x offset-y blur-radius spread-radius color; */
+    box-shadow: -10px -10px skyblue;
+    /* for creating shadow against the flow of the normals  */
+}
+#card2{
+    box-shadow: 10px 10px 5px skyblue;
+    /* for the blur radius (another attribute) */
+    /* fourth attribute spread 10px 10px 10px 10px*/
+   
+
+}
+#card3{
+    box-shadow: 10px 10px 5px  5px rgba(12, 114, 230, 0.945);
+    /* rgba a is for alpha for the darkness of the shadow  */
+}
+#card4{
+    box-shadow:inset 3px 5px greenyellow;
+    /* to make shadow inside the box  */
+}
+#card5{
+    box-shadow: 3px 5px grey , 4px 6px red;
+    /* for giving it multiple shadows  */
+}
+.card h2{
+             text-shadow: 3px 0px white;
+             /* x y color */
+             /* negetive for the oppositely directed shadow */
+}
+h1{
+    text-align:center;
+    font-size: 3rem;
+}
+    </style>
+</head>
+<body>
+    <h1>welcome to our website</h1>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellendus architecto temporibus numquam provident delectus! Fugit excepturi illum voluptates dolorem vel accusantium?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellendus architecto temporibus numquam provident delectus! Fugit excepturi illum voluptates dolorem vel accusantium?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellendus architecto temporibus numquam provident delectus! Fugit excepturi illum voluptates dolorem vel accusantium?</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellendus architecto temporibus numquam provident delectus! Fugit excepturi illum voluptates dolorem vel accusantium?</p>
+        </div>
+        <div class="card" id="card5">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus repellendus architecto temporibus numquam provident delectus! Fugit excepturi illum voluptates dolorem vel accusantium?</p>
+        </div>
+    </div>
+</body>
+</html>

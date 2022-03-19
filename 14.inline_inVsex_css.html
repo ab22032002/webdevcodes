@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inlline, internal ,external CSS CSS selectors  </title>
+    <style>
+   /* CSS UNIVERSAL SELECTOR  */
+   *{
+        border: 2px solid black;
+    }
+        p,footer{
+            color:tomato;
+            background-color: thistle;
+           
+        }
+        #red{
+            color: red;
+            background-color: yellow;
+            border:2px solid blue;
+        }
+        .bgblue{
+            background-color: blue;
+            background-color: turquoise;
+            /* lower overwrites the upper  */
+        }
+    </style>
+</head>
+<body>
+    <h3>this is the intro to CSS</h3>
+    <p style= "color:rgb(34, 132, 243);   background-color : aqua ">this is gonna very usefull </p>
+    <p> yet another simple para</p>
+    <p id="red" class="bgblue">this is red id and bg blue classs </p>
+    <p>the above example satisfies that that id is preferanced over the class </p>
+    <!-- inline is preferenced 1st in the stack  -->
+    <!-- then depends upon the positioning of the style either up or down  -->
+    <div>
+        <footer>this is footer</footer>
+    </div>
+    
+</body>
+</html>  
