@@ -1,8 +1,8 @@
 const http = require('http')
 const fs = require('fs')
-const hostname = '127.0.0.1';
-const port = 3000;
-const home = fs.readFileSync('./index.html');
+const hostname = '127.0.0.1'; // used in the server listening 
+const port = 3000;              // used in server listening 
+const home = fs.readFileSync('./index.html');  // this respected constants have been used in the call by the index.html in this directory 
 const about= fs.readFileSync('./about.html');
 const services = fs.readFileSync('./services.html');
 const contact = fs.readFileSync('./contact.html');
@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
     
  
  // making it else if statement for targetting the elements 
- if(url=='/')
+ if(url=='/')  // this is already mentioned in the form of the index.html 
  {
     res.end(home);
  }

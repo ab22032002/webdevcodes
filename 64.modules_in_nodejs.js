@@ -8,3 +8,4 @@ console.log(text);
 console.log("creating a new file ");
 // creating the file using direct addressing fs.writeFilesync
 fs.writeFileSync("2.try2.txt",text);  /// writtin the text in the file of the text written in the text 
+console.log("check the second file to see the contents have been wriiten or not ")

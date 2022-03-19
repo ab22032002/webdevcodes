@@ -9,6 +9,7 @@ let text = fs.readFile("1.try.txt","utf-8",(err,data)=>{  //fs.readFileSync("1.t
     // b is containing the file contents as of 1.try.txt all the content have been shifted to it 
 }); // it is expecting a call back funtion 
 console.log("this is message");
+console.log(text);
 /*HOW DOES THE ASYNCHRONOUS PROPERTY HAVE WORKED ?
   actually we see fs.readfile(,,(err,data)=>call back function expected)
   have not been synchronized as we see the output at the last */
