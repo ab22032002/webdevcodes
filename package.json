@@ -1,0 +1,30 @@
+{
+  "name": "webdevelopement",
+  "version": "1.0.0",
+  "description": "greatest package",
+  "main": "53.jsfunctions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ab22032002/webdevcodes.git"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "abhinav singh bhardwaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ab22032002/webdevcodes/issues"
+  },
+  "homepage": "https://github.com/ab22032002/webdevcodes#readme",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "express": "^4.17.3",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
