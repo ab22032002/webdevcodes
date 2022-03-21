@@ -1,0 +1,9 @@
+*{
+    font-family: cursive;
+}
+h1{
+    font-size: 1.3rem;
+    /* background-color: aqua; */
+    color:black;
+    font-weight: bold;
+}
