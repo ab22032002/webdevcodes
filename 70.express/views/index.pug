@@ -1,0 +1,43 @@
+<!-- we change the pug down there to html to use the functionalities we have created to use for the html files  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>using the simple html in pug </title> -->
+    <title>#{title}</title>
+    style 
+         include ../static/style.css
+         <!-- /added the files here as css  -->
+         <!-- ../ to come out of one folder then / entering a folder / then again entering the folder  -->
+</head>
+<body>
+    <nav>
+    <ul>
+        <li> <a href="/">Home</a></li>
+        <li><a href="/">About</a> </li>
+        <li><a href="/">contact</a></li>
+    </ul>
+    </nav>
+    <div class="container">
+    <h1>get this oppertunity in just $40</h1>
+    <!-- <p>
+        |#{content}
+        | this is the plain html using pug 
+        
+    </p>    -->
+    <!-- <p>if we are using  the same line then it can be easily accessed #{content}</p>  -->
+    <form action="/"id="contact">
+        <input type="text" name="name" id="name"placeholder="enter your name">
+        <input type="text" name="age" id="age" placeholder="enter your age ">
+        <input type="text" name="gender" id="gender" placeholder="enter your gender">
+        <textarea name="address" id="address" cols="30" rows="10"placeholder="enter your address"></textarea>
+         <textarea name="more" id="more" cols="30" rows="10" placeholder="more_about_you"></textarea>
+         <button class="btn">Submit</button>
+    </form>
+    </div>
+
+</body>
+</html>
+<!-- must use pipe in paras otherwise it will use it as pug templates -->

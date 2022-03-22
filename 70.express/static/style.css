@@ -4,6 +4,86 @@
 h1{
     font-size: 1.3rem;
     /* background-color: aqua; */
-    color:black;
+    color:aqua;
     font-weight: bold;
+    text-align: center;
 }
+p{
+    text-align: center; 
+    /* use this property to make it align to the center  */
+}
+nav{
+    /* background-color: aqua; */
+    padding:5px 2px;
+    display:block ;
+    margin:0px 0px ;
+
+}
+ul{
+    display:flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    padding:10px;
+    margin: 0px 5px;
+}
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+a:hover{
+    /* background-color:cyan ; */
+    color: black;
+    border:.2px solid black;
+    border-radius:5px;
+}
+.container{
+    display: block;
+    margin : 0px auto;
+    /* background-color: yellowgreen; */
+    max-width: 70%;
+    padding:13px;
+   
+}
+body::before{
+    /* background-color: cornflowerblue; */
+    content:"";
+    height:100%;
+    width:100%;
+    position:absolute;
+    background: url("/static/pexels-christian-heitz-842711.jpg") no-repeat center center/cover;
+    z-index: -1;
+}
+input,textarea{
+     display :block;
+     margin:10px;
+     padding:2px;
+     width:80%;
+     border:0.5px solid black;
+     border-radius: 5px;
+     text-align: center;
+     /* background-color: aqua; */
+    /* / background:url('/pexels-christian-heitz-842711.jpg'); */
+}
+.btn{
+    /* display:block;
+    margin:4px auto;
+    width:50%;
+    padding:5px; */
+    display :block;
+    margin:10px auto ;
+    padding:2px;
+    width:30%;
+    border:0.5px solid black;
+    border-radius: 5px;
+    text-align: center;
+    cursor:pointer;
+    outline:none;
+
+}
+/* textarea{
+    display:block;
+} */
