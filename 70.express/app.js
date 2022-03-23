@@ -48,3 +48,4 @@ app.listen(port,()=>{
 });
 // listening is very important as it must listen somewhere else 
 // giving the status code back 
+// this is just for fun 
